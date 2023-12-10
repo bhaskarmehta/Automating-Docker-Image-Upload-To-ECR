@@ -1,0 +1,27 @@
+name: Build Docker Image
+
+on: 
+  push: 
+     branches: ['main']
+  pull_request:
+     branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Login to Azure Container Registry
+        uses: azure/docker-login@v1
+        with:
+          login-server: bhaskaracr.azurecr.io
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Build and Push Docker Image to Azure ACR
+        run: |
+          docker build -t bhaskaracr.azurecr.io/nodejs:${{ github.run_number }} .
+          docker push bhaskaracr.azurecr.io/nodejs:${{ github.run_number }}
