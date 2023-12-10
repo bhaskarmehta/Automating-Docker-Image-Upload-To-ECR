@@ -40,4 +40,4 @@ jobs:
           sudo apt-get update && sudo apt-get install trivy
 
       - name: Scan Docker Image for Vulnerabilities
-        run: trivy image $ECR_REGISTRY/$ECR_REPOSITORY:${{ github.run_number }}  
+        run: trivy image 629884197199.dkr.ecr.eu-north-1.amazonaws.com/nodejs-ecr-repo:${{ github.run_number }}  
