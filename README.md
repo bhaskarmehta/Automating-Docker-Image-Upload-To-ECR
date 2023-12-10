@@ -1,6 +1,8 @@
 Build and Push Docker Image Into ECR And Scan the Image
 --------------------------------------------------------
 
+We can access this Application on - http://20.244.34.80:3000/
+
 *** This GitHub Actions workflow is designed to automate the process of building a Docker image, pushing it to Amazon Elastic Container Registry (ECR), and performing a vulnerability scan using Trivy.
 
 Setup
