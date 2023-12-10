@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "This is nodejs Hello World Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhaskarmehta/Automating-Docker-Image-Upload-To-Azure-Container-Registry-ACR-.git"
+  },
+  "author": "Bhaskar Mehta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhaskarmehta/Automating-Docker-Image-Upload-To-Azure-Container-Registry-ACR-/issues"
+  },
+  "homepage": "https://github.com/bhaskarmehta/Automating-Docker-Image-Upload-To-Azure-Container-Registry-ACR-#readme"
+}
